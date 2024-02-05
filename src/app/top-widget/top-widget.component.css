@@ -1,0 +1,72 @@
+.widget-container{
+    display: flex;
+    align-items: space-between;
+    .widget {
+      width: 50px;
+      height: 80px;
+      background-color: #fff;
+      color: #0D0C22;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px #939393;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      &.first {
+        background-color: #ffff;
+        width: 330px;
+      }
+      &.second {
+        background-color: #ffff;
+        margin-left: 30px;
+        width: 330px;
+      }
+      &.third {
+        background-color: #ffff;
+        margin-left: 30px;
+        width: 330px;
+      }
+      @media only screen and (max-width: 1600px) {
+        width: 300px;
+      }
+      @media only screen and (max-width: 1500px) {
+        width: 275px;
+      }
+      @media only screen and (max-width: 1400px) {
+        width: 250px;
+      }
+      @media only screen and (max-width: 1200px) {
+        width: 225px;
+      }
+  
+      .icon {
+        width: 100px;
+        color:#673AB7;
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+        /* Add border styles */
+        border: 2px solid #673AB7;
+        border-radius: 50%;
+        @media only screen and (max-width: 1200px) {
+          font-size: 45px;
+        }
+      }
+      .value {
+        text-align: center;
+        width: 175px;
+        .top {
+          font-size: 30px;
+          @media only screen and (max-width: 1200px) {
+            font-size: 26px;
+          }
+        }
+        .bottom {
+          font-size: 20px;
+          margin-top: 10px;
+          @media only screen and (max-width: 1200px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }

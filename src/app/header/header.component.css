@@ -1,0 +1,40 @@
+.header {
+    height: 30px;
+    padding: 20px 50px;
+    background-color: #ffff;
+    color: #0D0C22;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c7c7c7;
+    position: sticky; /* Corrected value */
+    top: 0; /* Specify the distance from the top */
+    z-index: 100; /* Add z-index to make sure it stays on top of other elements */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #673AB7;
+    border: 2px solid #673AB7;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.username {
+    padding-left: 10px;
+}

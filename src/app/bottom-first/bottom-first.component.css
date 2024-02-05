@@ -1,0 +1,50 @@
+.table-container {
+    margin-top: 20px;
+  }
+  
+  .table {
+    width: 110%;
+    height: 50px;
+    border-collapse: collapse;
+    overflow: auto;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .status {
+    padding: 10px;
+    font-weight: bold;
+
+    &.unpaid {
+        color: red;
+    }
+
+    &.partiallypaid {
+        color: orange;
+    }
+
+    &.paid {
+        color: green;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.view-all{
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    width: 107%;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}

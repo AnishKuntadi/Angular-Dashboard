@@ -1,0 +1,35 @@
+.nav-items {
+    padding-top: 40px;
+    border-right: 1px solid #c7c7c7;
+}
+
+.nav-item {
+    padding: 20px 50px 20px;
+    cursor: pointer;
+    @media only screen and (max-width: 1300px) {
+        padding: 25px 50px;
+    }
+
+    &:hover {
+        background-color: #d3d3d3;
+    }
+
+    span {
+        margin-top: -10px;
+        display: inline-block; /* Changed to inline-block */
+        vertical-align: middle; /* Align vertically in the middle */
+        @media only screen and (max-width: 1300px) {
+            display: none;
+        }
+    }
+
+    .fa-solid, .fas .fa-icon{
+    font-weight: 900;
+    color: #673AB7;
+    font-size: 25px;
+    margin-right: 10px; /* Adjusted the margin */
+    font-size: 25px; /* Adjusted the font size */
+    vertical-align: middle; /* Align vertically in the middle */
+}
+}
+

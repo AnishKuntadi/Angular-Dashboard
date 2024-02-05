@@ -1,0 +1,35 @@
+<div class="table-container">
+    <h2>Invoices</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>SI Number</th>
+          <th>Invoice Number</th>
+          <th>Client</th>
+          <th>Due Date</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let invoice of invoices">
+          <td>{{ invoice.id }}</td>
+          <td>{{ invoice.invoiceNumber }}</td>
+          <td>{{ invoice.client }}</td>
+          <td>{{ invoice.duedate }}</td>
+          <td>{{ invoice.amount | currency }}</td>
+          <td class="status" [ngClass]="{
+            unpaid: invoice.status === 'unpaid',
+            partiallypaid: invoice.status === 'partiallypaid',
+            paid: invoice.status === 'paid'
+        }">{{ invoice.status }}</td>
+        
+        </tr>
+      </tbody>
+      
+    </table>
+    <div class="view-all">
+        <a href="#">View All Invoices</a>
+    </div>
+  </div>
+  
